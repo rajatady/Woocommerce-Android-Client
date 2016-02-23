@@ -18,10 +18,10 @@ public class Aadira extends Application {
 
         WCBuilder builder = new WCBuilder();
         builder.setIsHttps(false);
-        builder.setBaseUrl("www.aadira.com");
+        builder.setBaseUrl("www.example.com");
         builder.setSigning_method(SigningMethod.HMACSHA1);
-        builder.setWc_key("ck_b1c74943c7ad59d34ee8477a210d12cfaff14406");
-        builder.setWc_secret("cs_c9233d13c31eb3117b3cfdcc53e4ddc358e3545d");
+        builder.setWc_key("");
+        builder.setWc_secret("");
         WooCommerce.getInstance().initialize(builder);
 
         LeakCanary.install(this);
