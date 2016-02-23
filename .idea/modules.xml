@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Woocommerce-Android-Client.iml" filepath="$PROJECT_DIR$/Woocommerce-Android-Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-app/sample-app.iml" filepath="$PROJECT_DIR$/sample-app/sample-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/woocommerce/woocommerce.iml" filepath="$PROJECT_DIR$/woocommerce/woocommerce.iml" />
+    </modules>
+  </component>
+</project>
