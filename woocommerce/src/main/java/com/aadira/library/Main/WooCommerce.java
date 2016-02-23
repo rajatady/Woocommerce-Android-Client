@@ -114,9 +114,10 @@ public class WooCommerce extends Application {
 //        this.signing_method = signing_method;
 //    }
 
+
+
     private WooCommerce() {
         Log.d(TAG, "Instance created");
-        LeakCanary.install(this);
     }
 
     public void initialize(WCBuilder builder) {
@@ -130,6 +131,7 @@ public class WooCommerce extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        LeakCanary.install(this);
 
     }
 
