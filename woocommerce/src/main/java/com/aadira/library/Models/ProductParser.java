@@ -57,7 +57,7 @@ public class ProductParser extends Product {
             product.regular_price = object1.getString("regular_price");
             product.sale_price = object1.getString("sale_price");
             product.managing_stock = object1.getBoolean("managing_stock");
-            product.stock_quantity = object1.get("stock_quantity").equals("") ? 0 : object1.getInt("stock_quantity");
+            product.stock_quantity = object1.get("stock_quantity").equals("") || object1.get("stock_quantity") == null ? 0 : object1.getInt("stock_quantity");
             product.in_stock = object1.getBoolean("in_stock");
             product.backorders_allowed = object1.getBoolean("backorders_allowed");
             product.backordered = object1.getBoolean("backordered");
