@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aadira</string>
+    <string name="app_name">WC-Sample App</string>
     <string name="title_activity_main">MainActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

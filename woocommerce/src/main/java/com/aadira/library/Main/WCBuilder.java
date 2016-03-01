@@ -12,7 +12,18 @@ public class WCBuilder {
     private String wc_key;
     private String wc_secret;
     private SigningMethod signing_method;
-    private boolean loggingEnabled;
+
+    public boolean isDeepLoggingEnabled() {
+        return deepLoggingEnabled;
+    }
+
+    public void setDeepLoggingEnabled(boolean deepLoggingEnabled) {
+        this.deepLoggingEnabled = deepLoggingEnabled;
+    }
+
+    private boolean isBasicLoggingEnabled;
+    private boolean deepLoggingEnabled;
+
 
 
     public boolean isHttps() {
@@ -47,12 +58,12 @@ public class WCBuilder {
         this.wc_secret = wc_secret;
     }
 
-    public boolean isLoggingEnabled() {
-        return loggingEnabled;
+    public boolean isBasicLoggingEnabled() {
+        return isBasicLoggingEnabled;
     }
 
-    public void setLoggingEnabled(boolean loggingEnabled) {
-        this.loggingEnabled = loggingEnabled;
+    public void setBasicLoggingEnabled(boolean basicLoggingEnabled) {
+        this.isBasicLoggingEnabled = basicLoggingEnabled;
     }
 
     public SigningMethod getSigning_method() {

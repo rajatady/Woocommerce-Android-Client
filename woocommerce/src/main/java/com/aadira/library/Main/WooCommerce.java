@@ -98,11 +98,11 @@ public class WooCommerce extends Application {
 //        this.wc_secret = wc_secret;
 //    }
 //
-//    public boolean isLoggingEnabled() {
+//    public boolean isBasicLoggingEnabled() {
 //        return loggingEnabled;
 //    }
 //
-//    public void setLoggingEnabled(boolean loggingEnabled) {
+//    public void setBasicLoggingEnabled(boolean loggingEnabled) {
 //        this.loggingEnabled = loggingEnabled;
 //    }
 //
