@@ -26,39 +26,38 @@ A beta Woocommerce Client for Android. Till now it has been very difficult to cr
 3. Sync the project with the gradle files. The library should be imported to your project.
 4. Create a new Java Class which extends the Application Class or if you already have one created, just put the following lines in there.
     
-    
-    public class Aadira extends Application {
+        public class Aadira extends Application {
 
-        @Override
-        public void onCreate() {
-            super.onCreate();
-
-            .
-            .
-            .
-            
-            WCBuilder builder = new WCBuilder();
-            
-            //Whether your website has https
-            builder.setIsHttps(false); 
-            
-            // Set the website URL
-            builder.setBaseUrl("your.websiteurl.here");
-            
-            // Signing method. Can be one of HMACSHA1 or HMACSHA256
-            builder.setSigning_method(SigningMethod.HMACSHA1);
-            
-            // your woocommerce api key
-            builder.setWc_key("key here");
-            
-            // your woocommerce api secret
-            builder.setWc_secret("secret here");
-            
-            WooCommerce.getInstance().initialize(builder);
-            .
-            .
+                @Override
+                public void onCreate() {
+                    super.onCreate();
+        
+                    .
+                    .
+                    .
+                    
+                    WCBuilder builder = new WCBuilder();
+                    
+                    //Whether your website has https
+                    builder.setIsHttps(false); 
+                    
+                    // Set the website URL
+                    builder.setBaseUrl("your.websiteurl.here");
+                    
+                    // Signing method. Can be one of HMACSHA1 or HMACSHA256
+                    builder.setSigning_method(SigningMethod.HMACSHA1);
+                    
+                    // your woocommerce api key
+                    builder.setWc_key("key here");
+                    
+                    // your woocommerce api secret
+                    builder.setWc_secret("secret here");
+                    
+                    WooCommerce.getInstance().initialize(builder);
+                    .
+                    .
+                }
         }
-    }
     
 5. Just get an instance of the Woocommerce Class hereon like this
       
