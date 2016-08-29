@@ -16,17 +16,13 @@ A beta Woocommerce Client for Android. Till now it has been very difficult to cr
             }   
         }
     
-    
- 2. Then in dependencies, add the following line to include the library:
+2. Then in dependencies, add the following line to include the library:
   
         dependencies {
             .
             .
             compile 'com.github.rajatady:Woocommerce-Android-Client:0.0.3'
         }
-        
-    
-    
 3. Sync the project with the gradle files. The library should be imported to your project.
 4. Create a new Java Class which extends the Application Class or if you already have one created, just put the following lines in there.
     
